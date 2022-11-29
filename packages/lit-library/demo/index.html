@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web components con Lit">
+  <title>Web components con Lit</title>
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../src/MyButton';
+    import '../src/MyCard';
+    // <my-button label="Hola Mundo"></my-button>
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <my-card
+            productName="Mousepad"
+            price="12000"
+            productImage="https://http2.mlstatic.com/D_NQ_NP_771237-MLA48330194998_112021-V.jpg"
+            productDescription="Mousepad cuadrado negro">
+        </my-card>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

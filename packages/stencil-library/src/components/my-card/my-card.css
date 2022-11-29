@@ -1,0 +1,70 @@
+*{
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+}
+p {
+  margin: 5px 0;
+}
+.container {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 25px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(51,101,138,0.4);
+  -moz-box-shadow: 0px 0px 15px -5px rgba(51,101,138,0.4);
+  box-shadow: 0px 0px 15px -5px rgba(51,101,138,0.4);
+  transition: 1s;
+  cursor: pointer;
+}
+.container:hover {
+  transform: scale(1.03);
+}
+.row {
+  width: 100%;
+  height: 100%;
+}
+.first-section {
+  width: 100%;
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+}
+.card-header {
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+}
+.optional-label {
+  position: absolute;
+  padding: 7px 10px;
+  background-color: #F26219;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+.like-button {
+  position: absolute;
+  right: 1rem;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.second-section {
+  width: 100%;
+  height: 26%;
+  padding: .5rem 1rem;    
+}
+.heart-icon {
+  font-size: 30px;
+  color: #2F4858;
+}
+.product-name {
+  font-weight: 500;
+  font-size: 20px;
+}
+.product-description {
+  color: #8F979B;
+  margin-bottom: 1rem;
+}
